@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background: #141e30;
+  background: linear-gradient(to right, #243855, #141e30);
+}
+/* .container {
+  min-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+} */
+
+/* Navbar */
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: #243855;
+}
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav ul li {
+  width: 0%;
+}
+nav .brand-logo {
+  font-size: 20px;
+  position: relative;
+}
+.active {
+  background-color: #1a283e;
+}
+.btn-large {
+  background-color: #243855;
+}
+.btn-large:hover {
+  background-color: #243855;
+}
+.btn-large:focus {
+  background-color: #243855;
+}
+/* кнопка мобильного меню */
+.menu__btn {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.menu__btn span {
+  height: 2px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* RegisterPage */
+
+.form-auth,
+.form-add-post {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #495c78;
+  border-radius: 10px;
+}
+.input-field {
+  margin-bottom: 0;
+}
+.input-field > label.active {
+  background-color: #495c78;
+}
+.btn-auth {
+  margin-right: 30px;
+}
+.form-title {
+  margin: 0 auto;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+/* создание поста - AddPostPage */
+.form-add-post {
+  max-width: 800px;
+}
+.file-field .btn {
+  width: 100%;
+}
+.post-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.form-add-post .file-path.validate {
+  border-bottom: none;
+  height: 0;
+  margin: 0;
+}
+.form-add-post .file-path.validate.valid {
+  border-bottom: none;
+}
+.post-img img {
+  width: 100%;
+}
+/* Главная страница - MainPage */
+.main,
+.post-page {
+  color: #fff;
+  max-width: 100%;
+  padding: 30px 0;
+}
+.main__inner {
+  width: 100%;
+}
+.main-post {
+  width: 70%;
+}
+.main__popular-post {
+  margin-top: 40px;
+  text-transform: uppercase;
+  width: 30%;
+}
+.main-post .post-title,
+.main-post-one .post-title,
+.main-post-all .post-title {
+  color: #fff;
+  font-weight: 400;
+  word-break: break-all;
+}
+.main-post .post-text,
+.main-post-one .post-text,
+.main-post-all .post-text {
+  color: #fff;
+  font-size: 16px;
+  word-break: break-all;
+  margin-bottom: 20px;
+}
+.post-item {
+  margin-top: 40px;
+}
+.main__inner {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+  overflow-x: hidden;
+}
+.post-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+.post-page-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.post-info {
+  display: flex;
+  justify-content: space-between;
+}
+.post-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-icon {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.post-view,
+.post-edit {
+  display: flex;
+  gap: 10px;
+}
+.btn-icon svg:not(:root) {
+  height: 20px;
+  width: 20px;
+}
+.popular-post a {
+  word-break: break-all;
+  line-height: 25pxs;
+}
+.popular-post {
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+/* PostPage - страница одного поста */
+.btn-back {
+  color: #fff;
+}
+.main-post-one {
+  width: 60%;
+}
+.post-comments {
+  width: 40%;
+  background-color: #495c78;
+  margin-top: 39px;
+  padding: 25px 20px;
+}
+.comment-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+.btn-comment {
+  color: #fff;
+  margin-right: 0px;
+}
+.post-comments .row {
+  flex-grow: 1;
+}
+.post-comments .input-field {
+  margin-top: 0px;
+}
+.comment-item {
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background-color: #243855;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.comment-avatar {
+  min-width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #495c78;
+}
+.comment-item p {
+  word-break: break-all;
+}
+.post-text {
+  text-indent: 1.5em;
+}
+.post-text + .post-text {
+  text-indent: 1.5em;
+}
+
+/* PostsPage - страница всех постов */
+.main-post-all {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* АДАПТИВ */
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 0%;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+@media (max-width: 993px) {
+  .container {
+    width: 100%;
+  }
+  .nav-wrapper {
+    padding: 0 12px;
+    position: static;
+  }
+  .waves-effect {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .main__inner {
+    padding: 0 20px;
+  }
+  .main-post-all {
+    width: 100%;
+    margin: 0;
+    padding: 0 50px;
+  }
+  .post-image img {
+    height: auto;
+  }
+  .nav .brand-logo {
+    left: 0%;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+  .post-page {
+    padding: 30px 20px;
+  }
+  .btn-back {
+    margin-left: 20px;
+  }
+}
+@media (max-width: 830px) {
+  .post-page .main__inner {
+    flex-wrap: wrap;
+  }
+  .main-post-one {
+    width: 100%;
+  }
+  .post-comments {
+    width: 100%;
+    padding: 25px 7px;
+  }
+  .btn-comment {
+    font-size: 9px;
+    padding: 0 6px 0 2px;
+  }
+}
+@media (max-width: 570px) {
+  .menu__list {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    top: 58px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 6;
+    background-color: #243855;
+    height: 100vh;
+    padding-top: 150px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  .nav-wrapper .brand-logo {
+    position: absolute;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menu__btn {
+    display: flex;
+  }
+  .menu__list li {
+    text-align: center;
+    width: 100%;
+  }
+  .menu__list.menu__list--active {
+    transform: translateY(0%);
+  }
+}
+
+@media (max-width: 450px) {
+  .main {
+    padding: 0 8px;
+  }
+  .main__inner {
+    padding: 0 8px;
+    gap: 15px;
+  }
+  .main-post .post-title,
+  .main-post-one .post-title,
+  .main-post-all .post-title {
+    font-size: 20px;
+  }
+  .main-post .post-text,
+  .main-post-one .post-text,
+  .main-post-all .post-text {
+    font-size: 15px;
+  }
+  .main-post-all {
+    padding: 0 25px;
+  }
+  .main__popular-post p {
+    font-size: 13px;
+  }
+  .post-image img {
+    height: auto;
+  }
+}
+@media (max-width: 340px) {
+  .form-add-post {
+    padding: 15px 5px;
+  }
+  .form-add-post span {
+    font-size: 14px;
+  }
+  .main-post-all {
+    padding: 0 10px;
+  }
+  .post-page {
+    padding: 30px 0;
+  }
+  .popular-post {
+    font-size: 12px;
+  }
+}
+
+/* проба */
