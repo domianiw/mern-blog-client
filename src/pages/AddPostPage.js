@@ -17,7 +17,7 @@ function AddPostPage() {
   const clickImageHandler = async (e) => {
     try {
       const formData = new FormData(); //const formData - данные из инпута, которые будем передавать в теле post-запроса
-      //console.log(e.target.files);//FileList {0: File, length: 1}
+      console.log(e.target.files); //FileList {0: File, length: 1}
       const file = e.target.files[0]; //все данные по картинке
       formData.append('image', file); //добавляем в formData ключ 'image' со значением file
       const { data } = await axios.post('/uploads', formData); //data зашита в ответе сервера
