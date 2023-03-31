@@ -5,7 +5,7 @@ import { MdRemoveRedEye, MdOutlineMessage, MdDelete, MdModeEdit } from 'react-ic
 import axios from '../utils/axios';
 //import { REACT_APP_URL } from '../utils/axios'; //url сервера
 //import { server } from '../utils/axios'; //url сервера
-import Moment from 'react-moment';
+//import Moment from 'react-moment';
 import { deleteOnePost } from '../redux/features/posts/postSlice';
 import { checkAuth } from '../redux/features/auth/authSlice';
 
@@ -107,7 +107,7 @@ function PostPage() {
               <div className="post-info">
                 <p className="post-author">{post.username}</p>
                 <p className="post-data">
-                  <Moment date={post.createdAt} format="D MMM YYYY" />
+                  {/* <Moment date={post.createdAt} format="D MMM YYYY" /> */}
                 </p>
               </div>
 
