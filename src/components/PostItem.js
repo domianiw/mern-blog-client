@@ -21,7 +21,7 @@ function PostItem({ post }) {
         <div className="post-info">
           <p className="post-author">{post.username}</p>
           <p className="post-data">
-            {format(new Date(), 'D MMM YYYY')}
+            {format(new Date(), 'd MMM YYYY')}
             {/* <Moment date={post.createdAt} format="D MMM YYYY" /> */}
           </p>
         </div>
