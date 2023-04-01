@@ -2,7 +2,7 @@ import { MdRemoveRedEye } from 'react-icons/md';
 import { MdOutlineMessage } from 'react-icons/md';
 //import { REACT_APP_URL } from '../utils/axios'; //url сервера
 //import { server } from '../utils/axios'; //url сервера
-import Moment from 'react-moment';
+//import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import TruncateMarkup from 'react-truncate-markup'; //обрезание текста
 
