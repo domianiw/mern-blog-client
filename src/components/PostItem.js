@@ -2,7 +2,7 @@ import { MdRemoveRedEye } from 'react-icons/md';
 import { MdOutlineMessage } from 'react-icons/md';
 //import { REACT_APP_URL } from '../utils/axios'; //url сервера
 //import { server } from '../utils/axios'; //url сервера
-//import Moment from 'react-moment';
+import Moment from 'react-moment';
 import { Link } from 'react-router-dom';
 import TruncateMarkup from 'react-truncate-markup'; //обрезание текста
 
@@ -19,7 +19,9 @@ function PostItem({ post }) {
         </div>
         <div className="post-info">
           <p className="post-author">{post.username}</p>
-          <p className="post-data">{/* <Moment date={post.createdAt} format="D MMM YYYY" /> */}</p>
+          <p className="post-data">
+            <Moment date={post.createdAt} format="D MMM YYYY" />
+          </p>
         </div>
 
         <h4 className="post-title">{post.title}</h4>
